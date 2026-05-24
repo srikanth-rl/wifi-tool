@@ -43,11 +43,9 @@ Install Aircrack-ng:
 `sudo apt update`
 `sudo apt install aircrack-ng -y`
 
-## Download wordlist
-Download [rockyou.txt](https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt) then run:
-```bash
-curl -L -o rockyou.txt https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
-```
+Download wordlist:
+`curl -L -o rockyou.txt https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
+`
 --------------------------------------------------
 3. ENABLE MONITOR MODE
 --------------------------------------------------
